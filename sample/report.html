@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>URL Status Check - Summary Report</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:40px;color:#222;}
+h1{color:#1f497d;}
+.summary{color:#555;margin-bottom:16px;}
+table{border-collapse:collapse;width:100%;}
+th,td{border:1px solid #bbb;padding:8px 10px;text-align:left;}
+th{background:#1f497d;color:#fff;}
+tr:nth-child(even){background:#f2f6fb;}
+tr.total td{background:#dce6f1;font-weight:bold;}
+.footer{margin-top:16px;color:#888;font-size:0.85em;}
+</style>
+</head>
+<body>
+<h1>URL Status Check - Summary Report</h1>
+<p class="summary">8 rows x 7 columns. Generated 2026-10-08.</p>
+<table>
+<thead><tr><th>url</th><th>final_url</th><th>status</th><th>reason</th><th>time_ms</th><th>redirected</th><th>error</th></tr></thead>
+<tbody>
+<tr><td>https://techabout.com/</td><td>https://www.techabout.com/</td><td>200</td><td>OK</td><td>2239</td><td>True</td><td></td></tr>
+<tr><td>https://www.techabout.com/</td><td>https://www.techabout.com/</td><td>200</td><td>OK</td><td>893</td><td>False</td><td></td></tr>
+<tr><td>https://techabout.com/services</td><td>https://www.techabout.com/services</td><td>200</td><td>OK</td><td>2138</td><td>True</td><td></td></tr>
+<tr><td>https://techabout.com/this-page-does-not-exist-xyz</td><td>https://www.techabout.com/this-page-does-not-exist-xyz</td><td>404</td><td>NOT FOUND</td><td>2017</td><td>True</td><td></td></tr>
+<tr><td>https://example.com/</td><td>https://example.com/</td><td>200</td><td>OK</td><td>491</td><td>False</td><td></td></tr>
+<tr><td>http://example.com/</td><td>http://example.com/</td><td>200</td><td>OK</td><td>148</td><td>False</td><td></td></tr>
+<tr><td>https://www.python.org/</td><td>https://www.python.org/</td><td>200</td><td>OK</td><td>495</td><td>False</td><td></td></tr>
+<tr><td>https://github.com/pakmultilinks-dot/techabout-link-extractor</td><td>https://github.com/pakmultilinks-dot/techabout-link-extractor</td><td>200</td><td>OK</td><td>920</td><td>False</td><td></td></tr>
+<tr class="total"><td>Total</td><td></td><td>1804</td><td></td><td>9341</td><td></td><td></td></tr>
+</tbody>
+</table>
+<p class="footer">Generated from CSV by html_summary_report.py. Numeric columns are summed in the totals row.</p>
+</body>
+</html>
